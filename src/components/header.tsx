@@ -1,12 +1,12 @@
 import Image from "next/image";
-import deliveryBoy from "../../../public/images/delivery-boy.png";
+import deliveryBoy from "../../public/images/delivery-boy.png";
 import { Button } from "./ui/button";
 
 export default function Header() {
 	return (
-		<div className="w-full h-96 bg-gradient-to-r to-[#7d7d96] from-[#8ed88f]">
-			<div className="container flex h-full">
-				<div className="text my-auto">
+		<div className="pt-20 w-full h-[40rem] bg-gradient-to-r to-[#7d7d96] from-[#8ed88f]">
+			<div className="container flex h-full items-center justify-between">
+				<div className="text">
 					<h1 className="text-[2.7rem] font-semibold">
 						Get Your Medicines <br />
 						Delivered on Time
@@ -21,7 +21,7 @@ export default function Header() {
 						</Button>
 					</div>
 				</div>
-				<Image src={deliveryBoy} alt="delivery-boy" />
+				<Image className="w-96" src={deliveryBoy} alt="delivery-boy" />
 			</div>
 		</div>
 	);
